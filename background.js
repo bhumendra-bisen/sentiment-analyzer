@@ -16,7 +16,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
 async function analyzeSentiment(text, tabId) {
   const API_URL = "https://api-inference.huggingface.co/models/distilbert-base-uncased-finetuned-sst-2-english";
-  const API_TOKEN = "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"; // Replace with your actual token
+  const API_TOKEN = "XXXXXXXXXXXXXXXXXXX"; // Replace with your actual token
 
   try {
     const response = await fetch(API_URL, {
