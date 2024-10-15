@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sentiment Analyzer</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+    .container {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #e8e8e8;
+    }
+    #analyzePage {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    #analyzePage:hover {
+      background-color: #45a049;
+    }
+    .sentiment-icon {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    #resetButton {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    #resetButton:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sentiment Analysis</h2>
+    <div id="result">Select text and use the context menu to analyze sentiment.</div>
+    <button id="analyzePage">Analyze Entire Page</button>
+    <button id="resetButton">Reset</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
